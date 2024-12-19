@@ -493,3 +493,93 @@ h2 {
         justify-content: center;
     }
 }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header */
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px; /* Added padding for alignment */
+    }
+
+    /* Search Input */
+    #searchInput {
+        width: 250px;
+        margin-bottom: 10px; /* Added margin for spacing */
+    }
+
+    /* Category Box */
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 150px;
+        margin: 10px 0; /* Added spacing between items */
+    }
+
+    /* Carousel */
+    .carousel-container, .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-item {
+        width: 100%; /* Ensures items take full width on mobile */
+        margin-bottom: 20px; /* Added margin for spacing */
+    }
+
+    /* Product Grid */
+    .product-grid {
+        grid-template-columns: 1fr; /* One column on mobile */
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom a {
+        margin: 5px 0; /* Added margin for better spacing */
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 15px; /* More space between icons */
+    }
+
+    /* Product Image and Item Adjustments */
+    .product img, .carousel-item img {
+        max-width: 100%; /* Ensure images fit within containers */
+    }
+
+    /* Mobile-Specific Adjustments */
+    .footer-column ul li {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+
+    /* Improved mobile alignment for text */
+    .content-section h2 {
+        font-size: 22px; /* Slightly smaller title */
+    }
+
+    .content-section p {
+        font-size: 14px; /* Adjust text size for readability */
+    }
+
+    /* Adjustments for smaller containers */
+    .product {
+        padding: 8px; /* Reduced padding for mobile */
+    }
+
+    .product img {
+        height: 250px; /* Adjusted image height */
+    }
+}
