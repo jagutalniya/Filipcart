@@ -583,3 +583,257 @@ h2 {
         height: 250px; /* Adjusted image height */
     }
 }
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    background-color: white;
+    padding: 15px 0;
+    color: rgb(0, 0, 0);
+    height: 60px;
+    position: relative;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 20px;
+    width: 100%;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    color: black;
+}
+
+#searchInput {
+    padding: 10px;
+    padding-left: 20px;
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    background: #e7f6ff;
+}
+
+#searchInput::placeholder {
+    color: #a9a9a9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    #searchInput {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Category Box */
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 150px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Carousel */
+    .carousel-container, .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Product Grid */
+    .product-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        padding: 10px;
+    }
+
+    .product {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .product img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .product img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-column h3 {
+        border-bottom: 2px solid #555;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul li {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .footer-bottom a {
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .payment-icons {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Content Section */
+    .content-section {
+        padding: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .content-section h2 {
+        font-size: 22px;
+        color: #666;
+    }
+
+    .content-section p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .content-section a {
+        color: #0073e6;
+        text-decoration: none;
+    }
+
+    .content-section a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    /* Header */
+    header nav ul {
+        padding-left: 5px;
+    }
+
+    #searchInput {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Carousel */
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Product Grid */
+    .product img {
+        height: 200px;
+    }
+
+    /* Footer */
+    .footer-column ul li {
+        font-size: 12px;
+    }
+
+    .footer-bottom a {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+
+    .payment-icons img {
+        width: 35px;
+    }
+}
